@@ -1,7 +1,9 @@
 # videoRetrieval-v2
 ## Instruction for the data to be used:
-1. Please make sure that the video-sentence ratio is constant. 
-2. Make different .npy files for train and test data using the below preprocessing files. The resulting feature files will be:
+1. Please make sure that the video-sentence ratio is constant.
+2. Organize your video data such that, you have all the video files for training inside "data_train" folder and for testing inside "data_test" folder. (You have the option to provide your own file names in the input/argumemts to the python files).
+3. Organize your sentence data such that, a "setences_train.txt" OR 'sentences_test.txt" file contains all the sentences corresponding to train/test data. The order of the sentences should be same as the order of the videos (which is sorted alphabetically). So, for example if you have two videos "a.mp4" and "b.mp4" in your video directory and the dataset contains 10 sentences/annotations per video then the sentences.txt file should contain 10 sentences for "a.mp4" than 10 sentences for "b.mp4" with each sentence in a new line in the text file.
+4. Make different .npy files for train and test data using the below preprocessing files. The resulting feature files will be:
     1. vid_feats_train.npy
     2. sent_feats_train.npy
     3. vid_feats_test.npy
