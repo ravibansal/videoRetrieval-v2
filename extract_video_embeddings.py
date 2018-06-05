@@ -42,7 +42,7 @@ def main():
     # videos = filter(lambda x: x.endswith('avi'), videos)
 
     # Load the CNN model trained on images to recognize objects.
-    with tf.device('/cpu:0'):
+    with tf.device('/gpu:0'):
         with tf.Session() as sess:
             vgg = vgg16.Vgg16()
             for idx, video in enumerate(videos):
