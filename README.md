@@ -1,5 +1,11 @@
 # videoRetrieval-v2
-Files and its usage
+## Instruction for the data to be used:
+1. Please make sure that the video-sentence ratio is constant. 
+2. Make different .npy files for train and test data using the below preprocessing files. The resulting feature files will be:
+    1. vid_feats_train.npy
+    2. sent_feats_train.npy
+    3. vid_feats_test.npy
+    4. sent_feats_test.npy
 ## extract_video_embeddings.py : 
 To extract video feature of size [80 4096] for all the videos in a given path and save it into a provided path. (using pre-trained VGG16 model). Download pretrianed npy file from https://mega.nz/#!YU1FWJrA!O1ywiCS2IiOlUCtCpI6HTJOMrneN-Qdv3ywQP5poecM
 ## extract_sentence_embeddings.py :
