@@ -26,6 +26,10 @@ python union_video_embeddings.py <video_feature_folder> <video_feature_file.npy>
 ## train_embedding_nn.py :
 To train the two branch network on the train data with the input as video feature and sentence feature path. It will checkpoint the model for last n timestamps in provided checkpoint directory.
 ### --usage:
+vid_feats.npy: [num_of_videos, 80, 4096]
+<br />
+sent_feats.npy: [num_of_sentences, 4800]
+<br />
 python train_embedding_nn.py \
     --video_feat_path ./vid_feats.npy \
     --sent_feat_path ./sent_feats.npy \
@@ -33,6 +37,10 @@ python train_embedding_nn.py \
 ## eval_embedding_nn.py :
 To evaluate the model for test data with the input as video feature and sentence feature path. It will restore the model from checkpoint directory and use it produce recall@K(1, 5, 10) values for vid2sent and sent2vid.
 ### --usage:
+vid_feats.npy: [num_of_videos, 80, 4096]
+<br />
+sent_feats.npy: [num_of_sentences, 4800]
+<br />
 python eval_embedding_nn.py \
     --video_feat_path ./vid_feats_test.npy  \
     --sent_feat_path ./sent_feats_test.npy \
