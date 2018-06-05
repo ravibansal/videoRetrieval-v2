@@ -26,6 +26,6 @@ python train_embedding_nn.py \
 To evaluate the model for test data with the input as video feature and sentence feature path. It will restore the model from checkpoint directory and use it produce recall@K(1, 5, 10) values for vid2sent and sent2vid.
 ### --usage:
 python eval_embedding_nn.py \
-    --image_feat_path ./vid_feats_test.npy  \
+    --video_feat_path ./vid_feats_test.npy  \
     --sent_feat_path ./sent_feats_test.npy \
     --restore_path ./checkpoint/-4081.meta
