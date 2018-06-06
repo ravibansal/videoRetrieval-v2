@@ -45,4 +45,4 @@ python eval_embedding_nn.py \
     --video_feat_path ./vid_feats_test.npy  \
     --sent_feat_path ./sent_feats_test.npy \
     --restore_path ./checkpoint/-4081.meta \
-    --sample_size \<number-of-Sentences-per-video\>
+    --sample_size \<number-of-sentences-per-video\>
